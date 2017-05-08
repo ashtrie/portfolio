@@ -1,0 +1,25 @@
+:local(#about) {
+    height: 100%;
+    z-index: 10;
+    padding: 50px 100px;
+    background-image: url('../../pics/me.png');
+    background-repeat: no-repeat;
+    background-size: 58%;
+    background-position-x: -5%;
+    background-position-y: 85%;
+    background-color: floralwhite;
+}
+
+:local(#about header) {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+
+:local(#about article) {
+    font-family: Heebo;
+    padding: 30px 0px 0px 470px;
+    font-size: 1.4rem;
+}

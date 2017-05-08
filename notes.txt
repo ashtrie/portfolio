@@ -1,0 +1,15 @@
+front:
+one page scroll
+parallax
+blur
+changing gradient
+connecting dots
+onCome & onGo animations
+snow or smth like that
+animated font
+cinematics
+
+https://digital.scotch.io/
+
+design:
+http://www.wix.com/blog/2016/11/new-templates-showcase/

@@ -1,0 +1,61 @@
+:local(#projects) {
+    height: 100%;
+    padding: 50px 100px;
+    background-image: url('../../pics/bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:local(#projects header) {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+
+:local(#projects header h1) {
+    color: #201F4B;
+}
+
+:local(#projects article) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 25px 25px;
+}
+
+:local(.preview) {
+    width: 280px;
+    height: 200px;
+    background: blue;
+    background-size: cover;
+}
+
+:local(.wpzorg) {
+    background-image: url('../../pics/wpzorg.png');
+}
+
+:local(.norco) {
+    background-image: url('../../pics/norco.png');
+}
+
+:local(.logotype) {
+    background-image: url('../../pics/logotype.png');
+}
+
+:local(.oncalc) {
+    background-image: url('../../pics/oncalc.png');
+    background-position-x: center;
+    width: 420px;
+}
+
+:local(.tictactoe) {
+    background-image: url('../../pics/tictactoe.png');
+    background-position-x: center;
+    width: 420px;
+}

@@ -1,0 +1,83 @@
+:local(#skills) {
+    height: 100%;
+    padding: 50px 100px;
+    background-image: url('../../pics/bg3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:local(#skills header) {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+
+:local(#skills header h1) {
+    color: #fff;
+}
+
+:local(#skills article) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 0 25px;
+}
+
+:local(.skillsGroup) {
+    width: 375px;
+    height: 100px;
+    font-family: Heebo;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+:local(.skillsGroupHover) {
+    color: red;
+}
+
+:local(.skillsGroup h2) {
+    font-weight: 500;
+    margin: 10px 0 10px;
+}
+
+:local(.skillsGroup span) {
+    padding-left: 25px;
+    font-size: 1.2rem;
+    /*color: rgba(255, 255, 255, 0.4);*/
+}
+
+:local(.subSkillsHover) {
+    color: #fff;
+}
+
+:local(.meter) {
+    padding-top: 60px;
+}
+
+:local(.statusBar) {
+    width: 1000px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+:local(.fill) {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to left, #DC281E, #F00000);
+}
+
+:local(.percent) {
+    font-size: 5rem;
+    position: relative;
+    top: -38px;
+    transform: scale(1, 1.3);
+    display: inline-block;
+    font-family: Montserrat-Light;
+    color: #fff;
+}

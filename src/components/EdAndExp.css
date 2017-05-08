@@ -1,0 +1,79 @@
+:local(#edAndExp) {
+    height: 100%;
+    z-index: 10;
+    padding: 50px 100px;
+    background-image: url('../../pics/bg4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:local(#edAndExp header) {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+
+:local(#edAndExp header h1) {
+    color: #bdbdbd;
+}
+
+:local(#edAndExp article) {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+:local(.column) {
+    width: 50%;
+    height: 100%;
+    /*background: blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /*background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.81px), black calc(50% - 0.8px), black calc(50% + 0.8px), transparent calc(50% + 0.81px), transparent 100%);*/
+}
+
+:local(.row) {
+    width: 100%;
+    height: 200px;
+    /*background-color: rgba(255, 0, 0, 0.5);*/
+}
+
+:local(.sfu) {
+    background-image: url('../../pics/sfu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+:local(.itmo) {
+    background-image: url('../../pics/itmo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+:local(.vh) {
+    background-image: url('../../pics/vh.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+
+:local(.fora) {
+    background-image: url('../../pics/fora.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}

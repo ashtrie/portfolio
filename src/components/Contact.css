@@ -1,0 +1,134 @@
+:local(#contact) {
+    height: 100%;
+    padding: 50px 100px;
+    background-image: url('../../pics/bg5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:local(#contact header) {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.4rem;
+}
+
+:local(#contact header h1) {
+    color: #fff;
+}
+
+:local(.form) {
+    text-align: center;
+}
+
+:local(.text) {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 406px;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+    font-family: Heebo;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    user-select: text;
+    cursor: auto;
+}
+
+:local(.form .text:focus) {
+    outline: 0;
+    border-bottom: solid 2px #969696;
+    transition: border 0.3s;
+}
+
+:local(.message) {
+    width: 850px;
+    height: 120px;
+    resize: none;
+}
+
+:local(.btn) {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    font-family: Heebo;
+    font-size: 1.1rem;
+}
+
+:local(.btn:hover) {
+    text-decoration: none;
+}
+
+:local(.btn-1) {
+    /*background: #e02c26;*/
+    font-weight: 100;
+}
+
+:local(.btn-1 svg) {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+:local(.btn-1 rect) {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+}
+
+:local(.btn-1:hover) {
+    background: rgba(225, 51, 45, 0);
+    /*font-weight: 900;
+    letter-spacing: 1px;*/
+}
+
+:local(.btn-1:hover rect) {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+:local(#contact footer) {
+    text-align: center;
+    margin-top: 70px;
+}
+
+:local(#contact footer h2) {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+
+:local(#contact footer span) {
+    text-align: center;
+    padding: 0px 20px;
+}

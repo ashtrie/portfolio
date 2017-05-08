@@ -1,0 +1,29 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+:local(*) {
+    /*color: red;*/
+}
+
+@font-face {
+    font-family: "Against";
+    src: url("../../fonts/against.otf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/montserrat.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../../fonts/montserrat-light.ttf");
+}
+
+@font-face {
+    font-family: "Heebo";
+    src: url("../../fonts/heebo.ttf");
+}
+
+.onepagePagination li a:before {
+    /*color: #0b354b;*/
+    background: red !important;
+}
