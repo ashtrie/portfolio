@@ -30,10 +30,14 @@
 }
 
 :local(.preview) {
+    display: inline-block;
     width: 280px;
     height: 200px;
     background: blue;
     background-size: cover;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    text-decoration: none;
 }
 
 :local(.wpzorg) {
@@ -58,4 +62,35 @@
     background-image: url('../../pics/tictactoe.png');
     background-position-x: center;
     width: 420px;
+}
+
+:local(.descriptionLayer) {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+:local(.preview:hover .descriptionLayer) {
+    visibility: visible;
+    opacity: 1;
+}
+
+:local(.description) {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+:local(.preview:hover .description) {
+    transform: translateY(0);
 }

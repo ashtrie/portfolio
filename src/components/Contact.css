@@ -128,7 +128,13 @@
     letter-spacing: 0.3rem;
 }
 
-:local(#contact footer span) {
+:local(.icon) {
     text-align: center;
     padding: 0px 20px;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+:local(.icon:hover) {
+    color: #292929;
 }

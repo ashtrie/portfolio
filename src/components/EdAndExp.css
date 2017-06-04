@@ -34,30 +34,72 @@
 :local(.column) {
     width: 50%;
     height: 100%;
-    /*background: blue;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-    /*background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.81px), black calc(50% - 0.8px), black calc(50% + 0.8px), transparent calc(50% + 0.81px), transparent 100%);*/
 }
 
 :local(.row) {
+    position: relative;
     width: 100%;
     height: 200px;
-    /*background-color: rgba(255, 0, 0, 0.5);*/
+    transition: filter 1.0s;
+}
+
+:local(.textarea) {
+    /*font-family: Heebo;*/
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    text-align: center;
+    /*color: #ff0000;*/
+    color: #2d2d2d;
+    opacity: 0;
+    transition: opacity 1.0s;
 }
 
 :local(.sfu) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 1.0s;
     background-image: url('../../pics/sfu.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30%;
 }
 
+:local(.row:hover .sfu) {
+    filter: blur(60px);
+}
+
+:local(.row:hover .itmo) {
+    filter: blur(60px);
+}
+
+:local(.row:hover .vh) {
+    filter: blur(60px);
+}
+
+:local(.row:hover .fora) {
+    filter: blur(60px);
+}
+
+:local(.row:hover .textarea) {
+    opacity: 1;
+}
+
 :local(.itmo) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 1.0s;
     background-image: url('../../pics/itmo.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -65,6 +107,12 @@
 }
 
 :local(.vh) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 1.0s;
     background-image: url('../../pics/vh.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +120,12 @@
 }
 
 :local(.fora) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 1.0s;
     background-image: url('../../pics/fora.png');
     background-position: center;
     background-repeat: no-repeat;

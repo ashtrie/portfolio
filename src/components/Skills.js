@@ -7,31 +7,109 @@ export default class Skills extends Component {
         skills: [
             {
                 groupName: 'Programming Languages',
-                subSkills: ['JavaScript', 'Python', 'C++'],
+                subSkills: [
+                    {
+                        name: 'JavaScript',
+                        points: 96,
+                    },
+                    {
+                        name: 'Python',
+                        points: 32,
+                    },
+                    {
+                        name: 'C++',
+                        points: 65,
+                    },
+                ],
             },
             {
                 groupName: 'Frameworks & Libraries',
-                subSkills: ['React', 'Redux', 'Node', 'Express', 'jQuery'],
+                subSkills: [
+                    {
+                        name: 'React',
+                        points: 98,
+                    },
+                    {
+                        name: 'Redux',
+                        points: 75,
+                    },
+                    {
+                        name: 'Node',
+                        points: 68,
+                    },
+                    {
+                        name: 'Express',
+                        points: 56,
+                    },
+                    {
+                        name: 'jQuery',
+                        points: 61,
+                    },
+                ],
             },
             {
                 groupName: 'Style & Markup',
-                subSkills: ['CSS3', 'Sass', 'HTML5'],
+                subSkills: [
+                    {
+                        name: 'CSS3',
+                        points: 81,
+                    },
+                    {
+                        name: 'Sass',
+                        points: 74,
+                    },
+                    {
+                        name: 'HTML5',
+                        points: 92,
+                    },
+                ],
             },
             {
                 groupName: 'Operational Systems',
-                subSkills: ['Windows', 'Linux'],
+                subSkills: [
+                    {
+                        name: 'Windows',
+                        points: 63,
+                    },
+                    {
+                        name: 'Linux',
+                        points: 79,
+                    },
+                ],
             },
             {
                 groupName: 'Paradigms',
-                subSkills: ['OOP', 'Functional Programming'],
+                subSkills: [
+                    {
+                        name: 'OOP',
+                        points: 77,
+                    },
+                    {
+                        name: 'Functional Programming',
+                        points: 74,
+                    },
+                ],
             },
             {
                 groupName: 'General',
-                subSkills: ['Git', 'Design Patterns', 'UI/UX'],
+                subSkills: [
+                    {
+                        name: 'Git',
+                        points: 82,
+                    },
+                    {
+                        name: 'Design Patterns',
+                        points: 57,
+                    },
+                    {
+                        name: 'UI/UX',
+                        points: 47,
+                    },
+                ],
             },
         ],
-        activeSkill: 0,
-        activeSubSkill: 0,
+        activeSkill: 5,
+        activeSubSkill: 1,
     };
 
     subSkillEnter(index) {
@@ -40,7 +118,7 @@ export default class Skills extends Component {
     }
 
     subSkillLeave() {
-        this.setState({ activeSubSkill: null });
+        this.setState({ activeSubSkill: 0 });
         console.log('onMouseLeave subSkillHighlight');
     }
 
@@ -50,8 +128,14 @@ export default class Skills extends Component {
     }
 
     skillLeave() {
-        this.setState({ activeSkill: null });
+        this.setState({ activeSkill: 0 });
         console.log('onMouseLeave skillHighlight');
+    }
+
+    fillStyle() {
+        return {
+            width: `${this.state.skills[this.state.activeSkill].subSkills[this.state.activeSubSkill].points}% !important`
+        };
     }
 
     render() {
@@ -62,7 +146,7 @@ export default class Skills extends Component {
                              onMouseLeave={ ::this.subSkillLeave }
                              className={ this.state.activeSubSkill === jindex && this.state.activeSkill === index ? styles.subSkillsHover : '' }
                        >
-                           { item }
+                           { item.name }
                        </span>;
             });
 
@@ -82,7 +166,13 @@ export default class Skills extends Component {
 
             }
         });
+        let currentSkillPoints = this.state.skills[this.state.activeSkill].subSkills[this.state.activeSubSkill].points;
+        let fillPerc = {
+            width: currentSkillPoints + '%',
+        };
 
+        console.log('fillPerc', fillPerc);
+        console.log('currentSkillPoints', currentSkillPoints);
         return (
             <section id={ styles.skills }>
                 <header>
@@ -95,9 +185,9 @@ export default class Skills extends Component {
 
                 <div className={ styles.meter }>
                     <div className={ styles.statusBar }>
-                        <div className={ styles.fill }>
-                            <span className={ styles.percent }>98</span>
+                        <div className={ styles.fill } style={ fillPerc }>
                         </div>
+                        <span className={ styles.percent }>{ currentSkillPoints }</span>
                     </div>
 
                 </div>
