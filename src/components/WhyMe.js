@@ -11,8 +11,10 @@ export default class WhyMe extends Component {
                 </header>
 
                 <article>
-                    <div></div>
-                    <div></div>
+                    {/* <div></div> */}
+                    {/* <div></div> */}
+                    <iframe width="480" height="280" src="https://www.youtube.com/embed/Ke2bSQEm-JY"></iframe>
+                    <iframe width="480" height="280" src="https://www.youtube.com/embed/96ufQrn8DHY"></iframe>
                 </article>
             </section>
         );

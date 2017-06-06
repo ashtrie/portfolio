@@ -27,13 +27,6 @@
     padding: 0 25px;
 }
 
-:local(#whyMe article div) {
-    width: 470px;
-    height: 320px;
+:local(#whyMe article iframe) {
     margin-top: 60px;
-    background: black;
-    background-image: url('../../pics/youtube.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20%;
 }
